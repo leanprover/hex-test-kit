@@ -1,6 +1,11 @@
 name = "hex-test-kit"
 defaultTargets = ["HexTestKit"]
 
+leanOptions = [
+  { name = "doc.verso", value = true },
+  { name = "doc.verso.suggestions", value = false },
+]
+
 [[lean_lib]]
 name = "HexTestKit"
 globs = ["HexTestKit", "Hex.Conformance.Emit", "Hex.BenchOracle.Flint"]
